@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.once.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.once.ui.gallery.GalleryFragment"
+        android:label="DONATE"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.once.ui.slideshow.SlideshowFragment"
+        android:label="GIVE BLOOD"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.example.once.contact"
+        android:label="contact us"
+        tools:layout="@layout/fragment_contact" />
+    <fragment
+        android:id="@+id/nav_meet"
+        android:name="com.example.once.meetFragment"
+        android:label="VOLUNTEER"
+        tools:layout="@layout/fragment_meet" />
+    <fragment
+        android:id="@+id/nav_message"
+        android:name="com.example.once.messageFragment"
+        android:label="DONATE NOW"
+        tools:layout="@layout/fragment_message" />
+</navigation>
